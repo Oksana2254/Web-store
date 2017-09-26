@@ -124,10 +124,21 @@ textarea{
     margin-left: auto;
 }
 /*DEFAULT COMPONENTS END*/
+.top-header{
+    border-bottom: 1px solid #edeff1;
+    padding-bottom: 31px;
+}
+.user-controls{
+    position: relative;
+}
 .user-controls span{
     position: absolute;
-    top: 55px;
-    right: 206px;
+    top: -5px;
+    right: 8px;
+    color: white;
+}
+.user-controls a + a{
+    margin-left: 22px;
 }
 .flex-container .mail{
     padding-top: 19px;
@@ -159,4 +170,27 @@ textarea{
     margin-left: auto;
     padding-top: 19px;
 }
-
+.social-link i{
+    color: #34404b;
+    font-size: 16px;
+}
+.social-link a + a{
+    margin-left: 12px;
+}
+.header-nav{
+    margin-left: 81px;
+}
+.header-nav a{
+    font-size: 16px;
+    color: #34404b;
+}
+.header-nav a + a{
+    margin-left: 40px;
+}
+.header-nav a:nth-child(1){
+    color: #ff5912;
+}
+.header-nav a:hover{
+    color: #ff8551;
+    text-decoration: none;
+}
