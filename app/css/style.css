@@ -131,11 +131,21 @@ textarea{
 .user-controls{
     position: relative;
 }
-.user-controls span{
+.user-controls .purchase{
     position: absolute;
-    top: -5px;
+    top: -12px;
     right: 8px;
     color: white;
+}
+.user-controls .circle{
+    background-color: #34404b;
+    width: 17px;
+    height: 17px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 2px;
 }
 .user-controls a + a{
     margin-left: 22px;
