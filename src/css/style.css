@@ -124,6 +124,17 @@ textarea{
 .light-orange-bg{
     background-color: #ff9060;
 }
+.offer{
+    font-size: 18px;
+    color: #3c4751;
+    font-family:'Harmonia_semibold';
+    margin-bottom: 15px;
+}
+.bottom-offer{
+    font-size: 16px;
+    color: #495662;
+    margin-bottom: 60px;
+}
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENTS START*/
@@ -139,6 +150,7 @@ textarea{
     padding: 30px 10px;
     position: relative;
     height: 372px;
+    margin-bottom: 73px;
 }
 .product-item:hover{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -221,6 +233,21 @@ textarea{
 }
 .user-controls a + a{
     margin-left: 22px;
+}
+.order-now span{
+    margin-right: 22px;
+    font-family: 'Harmonia_semibold';
+    color: #34404b;
+    font-size: 18px;
+}
+.order-now a{
+    font-size: 18px;
+    color: #ff5912;
+    font-family: 'Harmonia_semibold';
+    text-decoration: none;
+}
+.order-now i{
+    margin-right: 7px;
 }
 .flex-container .mail{
     padding-top: 19px;
@@ -318,6 +345,12 @@ textarea{
 .default-section{
     padding-top: 60px;
 }
+.default-section.new-arrivals p{
+    font-size: 16px;
+    text-align: center;
+    color: #495662;
+    margin-bottom: 72px;
+}
 .kit{
     padding: 20px 60px;
     border: 1px solid #eaedef;
@@ -339,4 +372,50 @@ textarea{
 }
 .sales-block .light-orange-bg{
     transform: rotate(-45deg);
+}
+.load-more{
+    padding: 25px 0;
+    display: block;
+}
+.load-more .circle-two{
+    display: inline-block;
+    background-color: #ff5912;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    text-decoration: none;
+}
+.full-kit{
+    border-right: 1px solid #f5f5f6;
+    padding-right: 31px;
+}
+.full-kit p{
+    font-family: 'Harmonia_black', sans-serif;
+    font-size: 22px;
+    color: #34404b;
+    margin-bottom: 18px;
+}
+.full-kit span{
+    font-size: 12px;
+    color: #495662;
+}
+.price-class{
+    display: inline-block;
+}
+.price-class span{
+    color: #ff5912;
+    font-family: Harmonia_black, sans-serif;
+    font-size: 25px;
+}
+.price-class span {
+    margin-left: 14px;
+}
+.area-adv p{
+    font-size: 16px;
+    color: #34404b;
+    margin-bottom: 24px;
+}
+.area-adv .area-numeral{
+    color: rgba(245, 245, 245, 0.6);
+    letter-spacing: .6em;
 }
