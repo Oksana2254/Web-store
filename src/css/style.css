@@ -127,7 +127,7 @@ textarea{
 .offer{
     font-size: 18px;
     color: #3c4751;
-    font-family:'Harmonia_semibold';
+    font-family:'Harmonia_semibold', sans-serif;
     margin-bottom: 15px;
 }
 .bottom-offer{
@@ -145,7 +145,7 @@ textarea{
     margin-left: auto;
 }
 .product-item{
-    font-family: 'Harmonia_bold';
+    font-family: 'Harmonia_bold', sans-serif;
     font-size: 18px;
     padding: 30px 10px;
     position: relative;
@@ -165,8 +165,7 @@ textarea{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.product-item:hover .item-img{
-
+.product-item .item-img img{
     max-height: 100%;
 }
 .product-item:hover .item-price{
@@ -202,11 +201,15 @@ textarea{
 }
 .product-item  li{
     display: inline-block;
+    margin-top: 25px;
 }
 .product-item .colors li{
     width: 13px;
     height: 13px;
     border-radius: 50%;
+}
+.product-item .items-controls li + li{
+    margin-left: 23px;
 }
 /*DEFAULT COMPONENTS END*/
 .top-header{
@@ -231,19 +234,28 @@ textarea{
     top: -15px;
     right: 2px;
 }
+.user-controls .icon-search-ic:hover{
+    background-position: -81px 0;
+}
+.user-controls .icon-user-ic:hover{
+    background-position: 0 -59px;
+}
+.user-controls .icon-cart-ic:hover{
+    background-position: -19px -59px;
+}
 .user-controls a + a{
     margin-left: 22px;
 }
 .order-now span{
     margin-right: 22px;
-    font-family: 'Harmonia_semibold';
+    font-family: 'Harmonia_semibold', sans-serif;
     color: #34404b;
     font-size: 18px;
 }
 .order-now a{
     font-size: 18px;
     color: #ff5912;
-    font-family: 'Harmonia_semibold';
+    font-family: 'Harmonia_semibold', sans-serif;
     text-decoration: none;
 }
 .order-now i{
@@ -282,6 +294,9 @@ textarea{
 .social-link i{
     color: #34404b;
     font-size: 16px;
+}
+.social-link i:hover{
+    color: #ff5912;
 }
 .social-link a + a{
     margin-left: 12px;
@@ -334,13 +349,22 @@ textarea{
     padding-left: 8%;
 }
 .title{
-    font-family: "Harmonia_black";
+    font-family: "Harmonia_black", sans-serif;
     text-transform: uppercase;
     font-size: 36px;
     margin-bottom: 25px;
 }
 .title.big{
     font-size: 52px;
+}
+.items-controls .icon-share-ic:hover{
+    background-position: 55px -59px;
+}
+.items-controls .icon-like-ic:hover{
+    background-position: -38px -79px;
+}
+.items-controls .icon-add-to-cart-ic:hover{
+    background-position: 0 -38px;
 }
 .default-section{
     padding-top: 60px;
@@ -385,6 +409,22 @@ textarea{
     height: 8px;
     text-decoration: none;
 }
+.sale-text{
+    position: absolute;
+    top: 35px;
+    left: 84px;
+}
+.sale-text .sale-top-text{
+    font-family: 'Harmonia_italic', sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+.sale-text .sale-bottom-text{
+    font-family: 'Harmonia_black', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
 .full-kit{
     border-right: 1px solid #f5f5f6;
     padding-right: 31px;
@@ -418,4 +458,77 @@ textarea{
 .area-adv .area-numeral{
     color: rgba(245, 245, 245, 0.6);
     letter-spacing: .6em;
+}
+.default-section.best-sales p{
+    font-size: 16px;
+    text-align: center;
+    color: #495662;
+    margin-bottom: 72px;
+}
+.best-items:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.best-items .item-title{
+    margin-bottom: 20px;
+    margin-left: 19px;
+}
+.best-items .best-item-img{
+    margin-left: 38px;
+    margin-top: 32px;
+}
+.best-item-description{
+    border-left: 1px solid #e9ecf3;
+    margin-left: 19px;
+    margin-top: 19px;
+}
+.item-title a{
+    font-family: 'Harmonia_bold', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #34404b;
+}
+.item-info .star-block{
+    margin-right: 53px;
+}
+.star-block li{
+    display: inline;
+    color: #f65e44;
+    font-size: 16px;
+}
+.star-block li:nth-child(4){
+    color: #e9ecf3;
+}
+.best-items .item-info{
+    margin-left: 24px;
+    display: inline-flex;
+}
+.item-info span{
+    color: #ff5912;
+    font-size: 19px;
+    font-family: 'Harmonia_bold', sans-serif;
+}
+.add-to-cart a{
+    text-decoration: none;
+    color: #ff5912;
+    font-size: 16px;
+    font-family:'Harmonia_semibold', sans-serif; ;
+}
+.add-to-cart span{
+    margin-right: 5px;
+}
+.best-items:hover .add-to-cart-hover {
+    opacity: 1;
+    z-index: 99;
+}
+.best-items .add-to-cart-hover{
+    opacity: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 75px;
+    width: 100%;
+    transition: all .3s linear;
+    z-index: -1;
+}
+.best-items:hover .item-info{
+    display: none;
 }
