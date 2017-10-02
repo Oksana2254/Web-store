@@ -171,7 +171,7 @@ button{
     padding: 30px 10px;
     position: relative;
     height: 372px;
-    margin-bottom: 73px;
+    margin-bottom: 28px;
 }
 .product-item:hover{
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -650,7 +650,8 @@ input[type="checkbox"]:checked + label::before{
     padding-top: 120px;
     padding-bottom: 60px;
 }
-subscribe-description .big-text{
+
+.subscribe-description .big-text{
     font-family: 'Harmonia_bold', sans-serif;
     font-size: 18px;
     margin-right: 20px;
@@ -676,12 +677,10 @@ subscribe-description .big-text{
     font-family: 'Harmonia_semibold', sans-serif;
     margin-left: 157px;
 }
-
 footer{
     padding: 60px 60px;
+    margin-top: 80px;
 }
-
-
 .footer-logo{
     display: flex;
     flex-direction: column;
@@ -715,4 +714,36 @@ footer{
 .payment-methods-icon{
     margin-top: 18px;
 }
-
+.bold-text{
+     font-family: 'Harmonia_black', sans-serif;
+     font-size: 18px;
+     color: #ff5912;
+     text-transform: none;
+ }
+.items-list li{
+    font-family: 'Harmonia_semibold', sans-serif;
+    font-size: 16px;
+    color: #34404b;
+}
+.items-list li + li{
+    margin-top: 30px;
+}
+.checkbox-group{
+    margin-top: 30px;
+}
+.range{
+    margin-top: 50px;
+}
+.range .max-value,
+.min-value{
+    font-family: 'Harmonia_semibold', sans-serif;
+    font-size: 16px;
+}
+.range-input-reoup input[type="number"]{
+    width: 40px;
+    height: 25px;
+    background-color: #edf0f2;
+}
+.range-input-reoup label{
+    margin: 12px;
+}
