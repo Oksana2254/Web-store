@@ -61,7 +61,7 @@
 /*STYLE RESET START*/
 *{
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 body{
     margin: 0;
@@ -109,14 +109,14 @@ button{
 .justify-sb{
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .align-center{
     -webkit-box-align: center;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .white-bg{
     background-color: #fff;
@@ -182,7 +182,7 @@ button{
 }
 .product-item:hover{
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .product-item .item-description{
     padding: 0 37px;
@@ -192,7 +192,7 @@ button{
     margin-bottom: 30px;
     white-space: nowrap;
     -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 .product-item .item-img img{
@@ -241,7 +241,7 @@ button{
     width: 13px;
     height: 13px;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
 }
 .product-item .items-controls li + li{
     margin-left: 23px;
@@ -263,9 +263,9 @@ input[type="checkbox"] + label{
     cursor: pointer;
     color: #34404b;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 input[type="checkbox"] + label::before{
     content: "";
@@ -286,7 +286,7 @@ input[type="checkbox"]:checked + label::before{
     border: none;
     background-color: #edf0f2;
     -webkit-border-radius: 0;
-            border-radius: 0;
+    border-radius: 0;
     height:  3px;
 }
 .add-range-value{
@@ -305,13 +305,13 @@ input[type="checkbox"]:checked + label::before{
     width: 11px;
     height: 11px;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     background-color: #34404b;
     border: none;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     outline: none;
 }
 /*DEFAULT COMPONENTS END*/
@@ -324,7 +324,7 @@ input[type="checkbox"]:checked + label::before{
     background-color: #34404b;
     padding: 5px 7px;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     position: absolute;
     top: -22px;
     right: 2px;
@@ -423,15 +423,15 @@ input[type="checkbox"]:checked + label::before{
     top: 50%;
     margin: 0;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .sale-carousel .carousel-indicators li{
     background-color: #fff;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     -webkit-border-radius: 0;
-            border-radius: 0;
+    border-radius: 0;
     margin: 0;
     display: block;
     width: 10px;
@@ -490,16 +490,16 @@ input[type="checkbox"]:checked + label::before{
 }
 .sales-block .orange-bg{
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     position: absolute;
     left: 0;
     top: 0;
 }
 .sales-block .light-orange-bg{
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .load-more{
     padding: 25px 0;
@@ -511,7 +511,7 @@ input[type="checkbox"]:checked + label::before{
     display: inline-block;
     background-color: #ff5912;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     width: 8px;
     height: 8px;
     text-decoration: none;
@@ -577,7 +577,7 @@ input[type="checkbox"]:checked + label::before{
 }
 .best-items:hover {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .best-items .item-title{
     margin-bottom: 20px;
@@ -669,7 +669,8 @@ input[type="checkbox"]:checked + label::before{
     font-family: 'Harmonia_italic', sans-serif;
 }
 .btn{
-    border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
     padding: 14px 25px;
     background-color: #ff5912;
 }
@@ -686,8 +687,15 @@ footer{
     padding: 60px 60px;
 }
 .footer-logo{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .footer-logo span{
@@ -754,3 +762,26 @@ footer{
 .load-more-ct{
     margin-top: 0;
 }
+/* Product slider start */
+.product-slider{
+    width: 330px;
+}
+/* Product slider end */
+/*Product description start*/
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio  label{
+    font-size: 14px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+/*Product description end*/
