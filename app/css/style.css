@@ -156,12 +156,13 @@ button{
     color: #495662;
     margin-bottom: 60px;
 }
-.description-text{
+.description-text {
     font-size: 16px;
     text-align: center;
     color: #495662;
     margin-bottom: 72px;
 }
+
 
 /*DEFAULT CLASSES END*/
 
@@ -785,3 +786,71 @@ footer{
     font-size: 18px;
 }
 /*Product description end*/
+.two-offer{
+    margin-bottom: 36px;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 12px;
+    color: #495662;
+}
+.bottom-offer.two-class {
+    margin-bottom: auto;
+    margin-top: 36px;
+    color: #495662;
+}
+.choose-text{
+    font-size: 18px;
+    font-family: 'Harmonia_semibold', sans-serif;
+    margin-right: 25px;
+}
+.size-radio + .size-radio{
+    margin-left: 15px;
+}
+.choose-size{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-right: 1px solid #edf0f2;
+}
+.item-count{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.order-form{
+    border-bottom: 1px solid #edf0f2;
+    border-top: 1px solid #edf0f2;
+}
+.jq-number.input-quantity .jq-number__field{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom-color: transparent;
+}
+.jq-number__spin.minus,
+.jq-number__spin.plus{
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom-color: transparent;
+    background: none;
+}
+.jq-number__spin.minus:hover,
+.jq-number__spin.plus:hover{
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom-color: transparent;
+    background: none;
+}
+.radio-list-btn{
+    margin-right: 44px;
+}
+.order-top .items-controls li{
+    display: inline-block;
+}
+.order-top .btn-new{
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: 0;
+}
