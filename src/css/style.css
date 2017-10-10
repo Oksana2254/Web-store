@@ -831,11 +831,25 @@ footer{
 .radio-list-btn{
     margin-right: 44px;
 }
-.order-top .items-controls li{
+.items-controls li{
     display: inline-block;
 }
-.order-top .btn-new{
-    border-radius: 50px;
+.bottom-block{
+    margin-top: 45px;
+}
+.order-now-two span{
+    font-size: 20px;
+    font-family: "Harmonia_black", sans-serif;
+}
+.btn-new{
+    border-radius: 27px;
     padding: 10px 20px;
     margin-left: 0;
+}
+.new-list{
+    margin-left: auto;
+    margin-right: 24px;
+}
+.new-list li + li{
+    margin-left: 24px;
 }
