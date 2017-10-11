@@ -759,6 +759,32 @@ footer{
 .payment-methods-icon{
     margin-top: 18px;
 }
+@media(max-width: 991px){
+    footer .flex-container{
+        flex-direction: column;
+    }
+    .footer-nav ul + ul {
+        margin-left: 0;
+    }
+    .payment-methods-icon li + li{
+        margin-left: 0;
+    }
+    .payment-methods{
+        margin-top: 15px;
+    }
+    footer{
+        padding: 25px 60px;
+    }
+    .footer-logo{
+        margin-bottom: 15px;
+    }
+    .footer-nav li:nth-child(3){
+        margin-bottom: 15px;
+    }
+    .payment-methods-icon li + li{
+        margin-top: 5px;
+    }
+}
 .bold-text{
     font-family: 'Harmonia_black', sans-serif;
     font-size: 18px;
