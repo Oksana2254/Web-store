@@ -176,6 +176,9 @@ button{
         text-align: center;
     }
 }
+.product-wrap{
+    padding: 100px 0 ;
+}
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENTS START*/
@@ -560,6 +563,18 @@ input[type="checkbox"]:checked + label::before{
     font-size: 14px;
     font-family: Harmonia_regular, sans-serif;
 }
+@media(max-width:479px){
+    .new-arrivals .title{
+        font-size: 27px;
+    }
+    .new-arrivals .description-text{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .default-section.new-arrivals{
+        padding: 40px 0;
+    }
+}
 .kit{
     padding: 20px 60px;
     border: 1px solid #eaedef;
@@ -680,16 +695,38 @@ input[type="checkbox"]:checked + label::before{
     color: #ff5912;
     margin-left: -4px;
 }
+@media(max-width: 991px){
+    .full-kit{
+        padding-right: 80px;
+    }
+    .price-class{
+        margin-right: 25px;
+    }
+}
+@media(max-width: 767px){
+    .full-kit{
+        padding-right: 30px;
+    }
+}
 @media(max-width: 599px){
+    .kit .flex-container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .full-kit {
+        border: none;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
     .full-kit p{
         font-size: 20px;
     }
-    .full-kit{
-        padding-right: 12px;
-    }
-    .price-class .price-sale{
-        margin-left: 4px;
-
+    .sales-block{
+        margin-bottom: 14px;
     }
 }
 @media(max-width: 479px){
@@ -838,6 +875,16 @@ input[type="checkbox"]:checked + label::before{
     color: #ff5912;
     margin-bottom: 20px;
 }
+@media(max-width: 767px){
+    .star-block{
+        margin-left: 20px;
+    }
+}
+@media(max-width: 599px){
+    .star-block{
+        margin-left: 0;
+    }
+}
 @media(max-width: 991px){
     .mobile-sidebar-btn{
         display: block;
@@ -966,10 +1013,23 @@ input[type="checkbox"]:checked + label::before{
     .subscribe-description .join-us-text{
         font-size: 12px;
     }
-    .subscribe-input{
-        font-size: 12px;
+    .subscribe-form form{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .subscribe-form .btn{
+        padding: 12px 20px;
+        width: 100%;
+        margin-top: 10%;
+    }
+    .subscribe-form label{
+        margin-bottom: 10px;
     }
 }
+
 footer{
     padding: 60px 10px;
 }
@@ -1001,9 +1061,18 @@ footer{
 .payment-methods-icon{
     margin-top: 18px;
 }
+@media(max-width: 1199px){
+    .footer-logo{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
 @media(max-width: 991px){
     footer{
-        padding: 90px 0 80px 0;
+        padding: 60px 0 60px 0;
     }
     .footer-nav{
         -webkit-justify-content: space-around;
@@ -1196,7 +1265,8 @@ footer{
     width: 50px;
 }
 .radio-list-btn{
-    margin-right: 50px;
+    padding-right: 50px;
+    border-right: 1px solid #edf0f2;
 }
 .items-controls li{
     display: inline-block;
@@ -1238,5 +1308,34 @@ footer{
     }
     .choose-text{
         white-space: nowrap;
+    }
+}
+@media(max-width: 479px){
+    #product-option-form{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .item-count{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .choose-size{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .bottom-block{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .new-list{
+        margin-right: 0;
+    }
+    .btn-new{
+        margin: 0 auto;
+        margin-top: 10px;
     }
 }
